@@ -100,9 +100,6 @@ max-width: 980px;
  .experience_date_place strong:first-of-type::after {
     content: ', ';
 } 
- ul {
-    padding: 0 0 0 20px;
-    } 
 }
 
 @media (min-width:768px) {
@@ -123,12 +120,25 @@ grid-template-columns: repeat(2, 1fr);
 margin-bottom:1em;
 }
 
+.intro_div {
+    margin-bottom:3vh;
+}
+
 .experience_company_title {
     grid-column: 1 / 2;
-} .experience_date_place {
+} 
+
+.experience_date_place,
+.experience_image {
 grid-column: 2 / 2;
 text-align: right;
 }
+
+.experience_image img {
+    max-width:400px;
+}
+
+
 
  .experience_lists {
     margin-top:1em;
@@ -136,6 +146,31 @@ text-align: right;
 }
 
 }
+
+.portfolio hr {
+    background-color: #07AA93;
+    height:2px;
+    width:100%;
+    display:block;
+}
+
+
+@media (max-width:767px) {
+
+    .portfolio hr {
+        display:none;
+
+    }
+
+    .portfolio a img {
+        display:none;
+    }
+    
+    .portfolio ul {
+        text-align:left;
+    }
+    
+    }
 
 header p, .experience_lists ul {
     margin-top:.25em;
@@ -156,6 +191,11 @@ footer p, footer a {
 
 footer a {
     border-bottom: 1px solid grey;
+}
+
+strong a {
+font-size:20px;
+font-weight:initial;
 }
 
 @media (min-width:1025px) {
